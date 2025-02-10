@@ -52,7 +52,7 @@
 
 We originally implemented Long-VITA on Ascend NPU and will adapt to Nvidia GPU.
 
-- [DATA Preparation (For Training)](https://github.com/VITA-MLLM/Long-VITA/blob/main/DATA.md)
+- [Data Preparation for Training](https://github.com/VITA-MLLM/Long-VITA/blob/main/DATA.md)
   
 - [Ascend NPU with MindSpeed](https://github.com/VITA-MLLM/Long-VITA/blob/main/NPU_MindSpeed.md)
 
