@@ -105,8 +105,8 @@ We list the data used in Long-VITA:
   - annotations: https://huggingface.co/datasets/VITA-MLLM/MovieNet-Summary
   - images: https://opendatalab.com/OpenDataLab/MovieNet
 
-- Comic
-  - https://huggingface.co/datasets/VITA-MLLM/Comic-Summary
+- Comic-9K
+  - https://huggingface.co/datasets/VITA-MLLM/Comic-9K
 
 - lmms-lab/LLaVA-Video-178K
   - https://huggingface.co/datasets/lmms-lab/LLaVA-Video-178K
@@ -119,27 +119,27 @@ We list the data used in Long-VITA:
 [
     ...
     {
-        "conversations": [
+        "messages": [
             {
-                "from": "human",
-                "value": "<image><image>..."
+                "role": "user",
+                "content": "...<image><image>..."
             },
             {
-                "from": "gpt",
-                "value": "..."
+                "role": "assistant",
+                "content": "..."
             }
         ],
         "images": ["path/to/first/image", "path/to/second/image", ...],
     },
     {
-        "conversations": [
+        "messages": [
             {
-                "from": "human",
-                "value": "<video><video>..."
+                "role": "user",
+                "content": "...<video><video>..."
             },
             {
-                "from": "gpt",
-                "value": "..."
+                "role": "assistant",
+                "content": "..."
             }
         ],
         "videos": ["path/to/first/video", "path/to/second/video", ...],
