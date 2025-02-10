@@ -1,6 +1,11 @@
 # Long-VITA: Scaling Large Multi-modal Models to 1 Million Tokens with Leading Short-Context Accuracy
 
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/cc367b87-3e23-4f3d-bea7-936b05664f26" width="100%" height="100%">
+</p>
+
 <font size=7><div align='center' > [[📖 Long-VITA Paper](https://arxiv.org/abs/2502.05177)] [[🤗 Hugging Face](https://huggingface.co/VITA-MLLM)] </div></font>
+
 
 
 ## 🔥 News
