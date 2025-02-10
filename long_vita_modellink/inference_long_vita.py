@@ -48,6 +48,8 @@ def inference_sigle_image():
         # 'max_num_frame': 1000,
     }
     print(f"payload {payload}")
+    print(f"image_path_list {len(image_path_list)}")
+    print(f"video_path_list {len(video_path_list)}")
     response = requests.put(url,
                             headers=headers,
                             data=json.dumps(payload),
@@ -77,14 +79,8 @@ def inference_multi_image():
                 image_path_list.append(filepath)
 
     image_path_list = natsort.natsorted(image_path_list)
-    # prompt = "<image>" * len(image_path_list) + "\nProvide a full summary of the comic book."
-    # prompt = "<image>" * len(image_path_list) + "\nProvide a full summary of the book."
-    # prompt = "This is a comic book.\n" + "<image>" * len(image_path_list) + "\nDescribe this comic book in details."
-    # prompt = "This is a comic book.\n" + "<image>" * len(image_path_list) + "\nDescribe those images in details."
-    # prompt = "<image>" * len(image_path_list) + "\nDescribe the story in images in one sentence."
-    # prompt = "<image>" * len(image_path_list) + "\nDescribe the story in one sentence."
-    # prompt = "<image>" * len(image_path_list) + "\nProvide a full summary of the comic book."
 
+    # prompt = "<image>" * len(image_path_list) + "\nProvide a full summary of the comic book."
     # prompt = "<image>" * len(image_path_list) + "\nHow many Avengers in the story? Provide their names."
     # prompt = "<image>" * len(image_path_list) + "\nThe inhumans donot join the noble battle, is that right?"
     prompt = "<image>" * len(image_path_list) + "\nWho is join the noble battle."
@@ -102,10 +98,54 @@ def inference_multi_image():
         'prompts': [prompt],
         'image_path_list': image_path_list if len(image_path_list) > 0 else None,
         'video_path_list': video_path_list if len(video_path_list) > 0 else None,
-        'tokens_to_generate': 1000,
-        'max_num_frame': 1000,
+        'tokens_to_generate': 8,
+        'max_num_frame': 4096,
     }
     print(f"payload {payload}")
+    print(f"image_path_list {len(image_path_list)}")
+    print(f"video_path_list {len(video_path_list)}")
+    response = requests.put(url,
+                            headers=headers,
+                            data=json.dumps(payload),
+                            verify=False)
+
+    if response.status_code != 200:
+        print(
+            f"Error {response.status_code}: {response.json()['message']}"
+        )
+    else:
+        answer = response.json()['text'][0]
+        print(f"answer {answer}")
+
+
+def inference_video():
+
+
+    image_path_list = []
+    video_path_list = []
+
+    video_path_list = ["/data/data/Kinetics/kinetics-dataset/k400_targz/train/00-bv7CYBwE_000031_000041.mp4"]
+    prompt = "<video>" * len(video_path_list) + "\nProvide a full summary of the video."
+
+    print("#" * 100)
+
+    url = os.environ.get('LongVITA_URL', default='http://127.0.0.1:5001/api')
+
+    headers = {
+        'Content-Type': 'application/json',
+        # 'Request-Id': 'remote-test',
+        # 'Authorization': f'Bearer {self.key}'
+    }
+    payload = {
+        'prompts': [prompt],
+        'image_path_list': image_path_list if len(image_path_list) > 0 else None,
+        'video_path_list': video_path_list if len(video_path_list) > 0 else None,
+        'tokens_to_generate': 1024,
+        'max_num_frame': 4096,
+    }
+    print(f"payload {payload}")
+    print(f"image_path_list {len(image_path_list)}")
+    print(f"video_path_list {len(video_path_list)}")
     response = requests.put(url,
                             headers=headers,
                             data=json.dumps(payload),
@@ -124,6 +164,7 @@ def main():
 
     inference_sigle_image()
     inference_multi_image()
+    inference_video()
 
 
 if __name__ == "__main__":
