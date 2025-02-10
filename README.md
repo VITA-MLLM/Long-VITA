@@ -32,8 +32,8 @@
 ## 📈 Experimental Results
 - **Comparison of image understanding**.
 
-![image](https://github.com/user-attachments/assets/30f62f51-675e-4dac-9f18-f743c311f9be)
-
+![image](https://github.com/user-attachments/assets/235bdb0e-37e6-4a5f-b20b-21b0bb83278a)
+![image](https://github.com/user-attachments/assets/72250c5b-7d33-4dba-98ab-0539bae08703)
 
 
 - **Comparison of video understanding**.
