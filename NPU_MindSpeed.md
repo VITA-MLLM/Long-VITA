@@ -92,7 +92,7 @@ The above script may need some adjustment.
 ### Start the model server
 
 ```
-bash scripts/modellink/qwen25/inference_qwen25_14b_intern_300m_server.sh 32768 32768 `date +'%Y%m%d_%H'`0000
+bash scripts/modellink/qwen25/inference_qwen25_14b_intern_300m_server.sh 1048576 1048576 `date +'%Y%m%d_%H'`0000
 ```
 
 Set up the model server for long context
@@ -108,21 +108,21 @@ The above script may need some adjustment.
 - Modify other variables to suit the environment.
 
 ### Use the model API
-Set `LCVLM_URL` to the server address, which is printed out when the above model server starts.
+Set `LongVITA_URL` to the server address, which is printed out when the above model server starts.
 ```
-export LCVLM_URL=http://127.0.0.1:5001/api
+export LongVITA_URL=http://127.0.0.1:5001/api
 ```
 
 Infer
 ```
-python lcvlm_modellink/inference_lcvlm.py
+python long_vita_modellink/inference_long_vita.py
 ```
 
 ## Evaluation
 
 Evaluate with VLMEvalKit
 ```
-bash VLMEvalKit/evaluation_LCVLM.sh
+bash VLMEvalKit/evaluation_long_vita.sh
 ```
 
 
