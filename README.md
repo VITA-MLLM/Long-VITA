@@ -6,7 +6,7 @@
 ## 🔥 News
 * **`2025.02.09`** 🌟 We support training and inference on both Ascend NPU with Modellink and Nvidia GPU with Megatron.
 * **`2025.02.05`** 🌟 The training code, deployment code, and model weights **have been released**. ~~We currently only support Ascend NPU and are working on adapting to Nvidia GPU~~.
-* **`2024.02.05`** 🌟 We are very proud to launch Long-VITA, which is a strong long-context visual language model and supports more than 1 million tokens.
+* **`2024.02.05`** 🌟 We are proud to launch Long-VITA, a strong long-context visual language model supporting over one million tokens.
 
 
 ## Contents <!-- omit in toc -->
@@ -33,7 +33,11 @@
 
 - **Comparison of video understanding**.
 
-![image](https://github.com/user-attachments/assets/01892ff3-cdcd-4d15-ad6d-5cc99ccbfa70)
+![image](https://github.com/user-attachments/assets/7f09662b-bd53-4504-927a-0e45214a049d)
+
+![image](https://github.com/user-attachments/assets/87bd2f4d-baf5-4a63-8002-151e30f52147)
+
+
 
 
 
