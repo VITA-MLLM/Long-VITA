@@ -1,0 +1,24 @@
+expecttest
+peft
+xlsxwriter
+termcolor
+tabulate
+tiktoken
+matplotlib
+datasets
+einops
+pybind11
+tensorboardX
+pyarrow
+transformers>=4.46.3
+deepspeed
+accelerate>=1.1.1
+timm
+flask
+flask_restful
+decord
+natsort
+setuptools==69.5.1
+evaluate
+# VLMEvalKit
+ipdb

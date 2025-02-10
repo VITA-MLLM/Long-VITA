@@ -1,0 +1,18 @@
+[submodule "third_party/ModelLink"]
+	path = third_party/ModelLink
+	url = https://gitee.com/ascend/ModelLink.git
+[submodule "third_party/Megatron-LM_core_r0.7.0"]
+	path = third_party/Megatron-LM_core_r0.7.0
+	url = https://github.com/NVIDIA/Megatron-LM.git
+[submodule "third_party/Megatron-LM_core_r0.6.0"]
+	path = third_party/Megatron-LM_core_r0.6.0
+	url = https://github.com/NVIDIA/Megatron-LM.git
+[submodule "third_party/MindSpeed_core_r0.6.0"]
+	path = third_party/MindSpeed_core_r0.6.0
+	url = https://gitee.com/ascend/MindSpeed.git
+[submodule "third_party/VLMEvalKit"]
+	path = third_party/VLMEvalKit
+	url = https://github.com/open-compass/VLMEvalKit.git
+[submodule "third_party/Pai-Megatron-Patch"]
+	path = third_party/Pai-Megatron-Patch
+	url = https://github.com/alibaba/Pai-Megatron-Patch.git

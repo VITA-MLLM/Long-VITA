@@ -1,0 +1,384 @@
+
+xlsx_sample_num: 5
+
+dataset:
+
+  LLaVA:
+    ratio: 0
+    data_paths:
+      #- datasets/jsonl/liuhaotian/LLaVA-Pretrain/blip_laion_cc_sbu_558k.jsonl
+      #- datasets/jsonl/liuhaotian/LLaVA-Instruct-150K/llava_instruct_150k.jsonl
+      - datasets/jsonl/liuhaotian/LLaVA-Instruct-150K/llava_v1_5_mix665k.jsonl
+
+  LLaVA-ReCap:
+    ratio: 1.0
+    data_paths:
+      - datasets/jsonl/lmms-lab/LLaVA-ReCap-558K/data.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-ReCap-118K/data.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-ReCap-CC3M/data.jsonl
+
+  ALLaVA:
+    ratio: 1.0
+    data_paths:
+      - datasets/jsonl/FreedomIntelligence/ALLaVA-4V/allava_vflan/ALLaVA-Caption-VFLAN-4V.jsonl
+      - datasets/jsonl/FreedomIntelligence/ALLaVA-4V/allava_laion/ALLaVA-Caption-LAION-4V.jsonl
+      - datasets/jsonl/FreedomIntelligence/ALLaVA-4V/allava_vflan/ALLaVA-Instruct-VFLAN-4V.jsonl
+      - datasets/jsonl/FreedomIntelligence/ALLaVA-4V/allava_laion/ALLaVA-Instruct-LAION-4V.jsonl
+      - datasets/jsonl/FreedomIntelligence/ALLaVA-4V/allava_text/Evol-Instruct-GPT4-Turbo-143K.jsonl
+      - datasets/jsonl/FreedomIntelligence/ALLaVA-4V/others/Instruct-LAION-4oiterative.jsonl
+      - datasets/jsonl/FreedomIntelligence/ALLaVA-4V/others/Instruct-LAION-4v_gemini_claude-ensembled.jsonl
+
+  LVIS:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/X2FD/LVIS-Instruct4V/lvis_instruct4v_220k.jsonl
+
+  ShareGPT4V:
+    ratio: 1.0
+    data_paths:
+      - datasets/jsonl/Lin-Chen/ShareGPT4V/share-captioner_coco_lcs_sam_1246k_1107.jsonl
+      - datasets/jsonl/Lin-Chen/ShareGPT4V/sharegpt4v_instruct_gpt4-vision_cap100k.jsonl 
+
+  the_cauldron:
+    ratio: 0.0
+    data_paths:
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/ai2d.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/aokvqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/chart2text.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/chartqa.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/clevr.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/clevr_math.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/cocoqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/datikz.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/diagram_image_to_text.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/docvqa.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/dvqa.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/figureqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/finqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/geomverse.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/hateful_memes.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/hitab.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/iam.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/iconqa.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/infographic_vqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/intergps.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/localized_narratives.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/mapqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/mimic_cgd.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/multihiertt.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/nlvr2.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/ocrvqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/okvqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/plotqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/raven.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/rendered_text.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/robut_sqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/robut_wikisql.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/robut_wtq.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/scienceqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/screen2words.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/spot_the_diff.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/st_vqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/tabmwp.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/tallyqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/tat_qa.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/textcaps.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/textvqa.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/tqa.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/vistext.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/visual7w.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/visualmrc.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/vqarad.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/vqav2.jsonl
+      #- datasets/jsonl/HuggingFaceM4/the_cauldron/vsr.jsonl
+      - datasets/jsonl/HuggingFaceM4/the_cauldron/websight.jsonl
+
+  Docmatix:
+    ratio: 1.0
+    data_paths:
+      - datasets/jsonl/HuggingFaceM4/Docmatix/data.jsonl
+
+  LLaVA-OneVision-Mid-Data:
+    ratio: 1.0
+    data_paths:
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Mid-Data/evol_instruct/evol_instruct_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Mid-Data/synthdog_en/synthdog_en_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Mid-Data/synthdog_zh/synthdog_zh_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Mid-Data/ureader_tr/ureader_tr_processed.jsonl
+
+  LLaVA-OneVision-Data:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/CLEVR-Math(MathV360K).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/FigureQA(MathV360K).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/GEOS(MathV360K).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/GeoQA+(MathV360K).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/Geometry3K(MathV360K).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/IconQA(MathV360K).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/MapQA(MathV360K).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/PMC-VQA(MathV360K).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/Super-CLEVR(MathV360K).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/TabMWP(MathV360K).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/UniGeo(MathV360K).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/VisualWebInstruct(filtered).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/VizWiz(MathV360K).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/ai2d(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/ai2d(gpt4v).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/ai2d(internvl).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/allava_instruct_laion4v.jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/allava_instruct_vflan4v.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/aokvqa(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/cambrian(filtered).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/chart2text(cauldron).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/chartqa(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/chrome_writting.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/clevr(cauldron,llava_format).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/diagram_image_to_text(cauldron).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/dvqa(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/figureqa(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/geo170k(align).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/geo170k(qa).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/geo3k.jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/geomverse(cauldron).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/hateful_memes(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/hitab(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/hme100k.jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/iam(cauldron).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/iconqa(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/iiit5k.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/image_textualization(filtered).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/infographic(gpt4v).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/infographic_vqa.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/infographic_vqa_llava_format.jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/intergps(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/k12_printing.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/llavar_gpt4_20k.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/lrv_chart.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/lrv_normal(filtered).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/magpie_pro(l3_80b_mt).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/magpie_pro(l3_80b_st).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/magpie_pro(qwen2_72b_st).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/mapqa(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/mathqa.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/mavis_math_metagen.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/mavis_math_rule_geo.jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/multihiertt(cauldron).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/orand_car_a.jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/raven(cauldron).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/rendered_text(cauldron).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/robut_sqa(cauldron).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/robut_wikisql(cauldron).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/robut_wtq(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/scienceqa(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/scienceqa(nona_context).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/screen2words(cauldron).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/sharegpt4o.jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/sharegpt4v(coco).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/sharegpt4v(knowledge).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/sharegpt4v(llava).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/sharegpt4v(sam).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/sroie.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/st_vqa(cauldron,llava_format).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/tabmwp(cauldron).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/tallyqa(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/textcaps.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/textocr(gpt4v).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/tqa(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/ureader_cap.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/ureader_ie.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/ureader_kg.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/ureader_qa.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/vision_flan(filtered).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/vistext(cauldron).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/visual7w(cauldron,llava_format).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/visualmrc(cauldron).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/vqarad(cauldron,llava_format).jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/vsr(cauldron,llava_format).jsonl
+      #- datasets/jsonl/lmms-lab/LLaVA-OneVision-Data/websight(cauldron).jsonl
+
+  M4-Instruct-Data:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/lmms-lab/M4-Instruct-Data/m4_instruct_annotations.jsonl
+      - datasets/jsonl/lmms-lab/M4-Instruct-Data/m4_instruct_video.jsonl
+
+  OpenHermes:
+    ratio: 0.0
+    num: 300000
+    data_paths:
+      - datasets/jsonl/teknium/OpenHermes-2.5/openhermes2_5.jsonl
+
+  lima:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/GAIR/lima/train.jsonl
+
+  databricks-dolly-15k:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/databricks/databricks-dolly-15k/databricks-dolly-15k.jsonl
+
+  MetaMathQA:
+    ratio: 0.0
+    num: 100000
+    data_paths:
+      - datasets/jsonl/meta-math/MetaMathQA/MetaMathQA-395K.jsonl
+
+  MathInstruct:
+    ratio: 0.0
+    num: 80000
+    data_paths:
+      - datasets/jsonl/TIGER-Lab/MathInstruct/MathInstruct.jsonl
+
+  orca-math-word-problems-200k:
+    ratio: 0.0
+    num: 50000
+    data_paths:
+      - datasets/jsonl/microsoft/orca-math-word-problems-200k/data.jsonl
+
+  atlas-math-sets:
+    ratio: 0.0
+    num: 100000
+    data_paths:
+      - datasets/jsonl/AtlasUnified/atlas-math-sets/train.jsonl
+
+  goat:
+    ratio: 0.0
+    num: 30000
+    data_paths:
+      - datasets/jsonl/tiedong/goat/dataset.jsonl
+
+  camel-ai:
+    ratio: 0.0
+    num: 30000
+    data_paths:
+      - datasets/jsonl/camel-ai/math/math.jsonl
+
+  Long-Instruction-with-Paraphrasing:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/booksum_en.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/multi_doc_qa_en_paraphrasing.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/sharegpt_en.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/short_instruction_from_alpaca_en.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/single_doc_qa_en_paraphrasing.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/translation_en2zh.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/booksum_zh.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/multi_doc_qa_zh_paraphrasing.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/sharegpt_zh.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/short_instruction_from_llama_chinese.jsonl
+      - datasets/jsonl/yuyijiong/Long-Instruction-with-Paraphrasing/single_doc_qa_zh_paraphrasing.jsonl
+
+  Long:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/akoksal/LongForm/data.jsonl
+      - datasets/jsonl/THUDM/LongAlign-10k/long.jsonl
+      - datasets/jsonl/THUDM/LongCite-45k/long.jsonl
+      - datasets/jsonl/THUDM/LongWriter-6k/long.jsonl
+      - datasets/jsonl/YeungNLP/LongQLoRA-Dataset/LongQLoRA-SFT-Data-39k.jsonl
+      - datasets/jsonl/Yukang/LongAlpaca-12k/LongAlpaca-12k.jsonl
+      - datasets/jsonl/togethercomputer/Long-Data-Collections/natural_questions_10_200_docs.jsonl
+      - datasets/jsonl/togethercomputer/Long-Data-Collections/booksum.jsonl
+
+  VideoGPT-plus_Training_Dataset:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/MBZUAI/VideoGPT-plus_Training_Dataset/caption_videochat.jsonl
+      - datasets/jsonl/MBZUAI/VideoGPT-plus_Training_Dataset/classification_k710.jsonl
+      - datasets/jsonl/MBZUAI/VideoGPT-plus_Training_Dataset/classification_ssv2.jsonl
+      - datasets/jsonl/MBZUAI/VideoGPT-plus_Training_Dataset/conversation_videochat1.jsonl
+      - datasets/jsonl/MBZUAI/VideoGPT-plus_Training_Dataset/conversation_videochatgpt.jsonl
+      - datasets/jsonl/MBZUAI/VideoGPT-plus_Training_Dataset/reasoning_clevrer_mc.jsonl
+      - datasets/jsonl/MBZUAI/VideoGPT-plus_Training_Dataset/reasoning_clevrer_qa.jsonl
+      - datasets/jsonl/MBZUAI/VideoGPT-plus_Training_Dataset/reasoning_next_qa.jsonl
+      - datasets/jsonl/MBZUAI/VideoGPT-plus_Training_Dataset/vcg_human_annotated.jsonl
+      - datasets/jsonl/MBZUAI/VideoGPT-plus_Training_Dataset/vcg-plus_112K.jsonl
+      - datasets/jsonl/MBZUAI/VideoGPT-plus_Training_Dataset/vqa_webvid_qa.jsonl
+
+  Share14/ShareGemini_cap:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/Share14/ShareGemini/sharegemini_k400.jsonl
+      - datasets/jsonl/Share14/ShareGemini/sharegemini_webvid_core100k.jsonl
+
+  Movie:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/MovieNet/MovieNet.jsonl
+
+  Comic-9K:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/Comic-9K/summary.jsonl
+
+  lmms-lab/LLaVA-Video-178K_0_30_s_cap:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/0_30_s_academic_v0_1/0_30_s_academic_v0_1_cap_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/0_30_s_youtube_v0_1/0_30_s_youtube_v0_1_cap_processed.jsonl
+
+  lmms-lab/LLaVA-Video-178K_0_30_s_qa:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/0_30_s_academic_v0_1/0_30_s_academic_mc_v0_1_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/0_30_s_academic_v0_1/0_30_s_academic_oe_v0_1_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/0_30_s_activitynetqa/0_30_s_activitynetqa_oe_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/0_30_s_nextqa/0_30_s_nextqa_mc_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/0_30_s_nextqa/0_30_s_nextqa_oe_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/0_30_s_perceptiontest/0_30_s_perceptiontest_mc_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/0_30_s_youtube_v0_1/0_30_s_youtube_mc_v0_1_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/0_30_s_youtube_v0_1/0_30_s_youtube_oe_v0_1_qa_processed.jsonl
+
+  lmms-lab/LLaVA-Video-178K_1_2_m_cap:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/1_2_m_academic_v0_1/1_2_m_academic_v0_1_cap_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/1_2_m_youtube_v0_1/1_2_m_youtube_v0_1_cap_processed.jsonl
+
+  lmms-lab/LLaVA-Video-178K_1_2_m_qa:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/1_2_m_academic_v0_1/1_2_m_academic_mc_v0_1_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/1_2_m_academic_v0_1/1_2_m_academic_oe_v0_1_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/1_2_m_activitynetqa/1_2_m_activitynetqa_oe_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/1_2_m_nextqa/1_2_m_nextqa_mc_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/1_2_m_nextqa/1_2_m_nextqa_oe_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/1_2_m_youtube_v0_1/1_2_m_youtube_mc_v0_1_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/1_2_m_youtube_v0_1/1_2_m_youtube_oe_v0_1_qa_processed.jsonl
+
+  lmms-lab/LLaVA-Video-178K_2_3_m_cap:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/2_3_m_academic_v0_1/2_3_m_academic_v0_1_cap_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/2_3_m_youtube_v0_1/2_3_m_youtube_v0_1_cap_processed.jsonl
+
+  lmms-lab/LLaVA-Video-178K_2_3_m_qa:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/2_3_m_academic_v0_1/2_3_m_academic_mc_v0_1_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/2_3_m_academic_v0_1/2_3_m_academic_oe_v0_1_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/2_3_m_activitynetqa/2_3_m_activitynetqa_oe_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/2_3_m_nextqa/2_3_m_nextqa_mc_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/2_3_m_nextqa/2_3_m_nextqa_oe_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/2_3_m_youtube_v0_1/2_3_m_youtube_mc_v0_1_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/2_3_m_youtube_v0_1/2_3_m_youtube_oe_v0_1_qa_processed.jsonl
+
+  lmms-lab/LLaVA-Video-178K_30_60_s_cap:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/30_60_s_academic_v0_1/30_60_s_academic_v0_1_cap_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/30_60_s_youtube_v0_1/30_60_s_youtube_v0_1_cap_processed.jsonl
+
+  lmms-lab/LLaVA-Video-178K_30_60_s_qa:
+    ratio: 0.0
+    data_paths:
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/30_60_s_academic_v0_1/30_60_s_academic_mc_v0_1_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/30_60_s_academic_v0_1/30_60_s_academic_oe_v0_1_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/30_60_s_activitynetqa/30_60_s_activitynetqa_oe_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/30_60_s_nextqa/30_60_s_nextqa_mc_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/30_60_s_nextqa/30_60_s_nextqa_oe_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/30_60_s_perceptiontest/30_60_s_perceptiontest_mc_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/30_60_s_youtube_v0_1/30_60_s_youtube_mc_v0_1_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/30_60_s_youtube_v0_1/30_60_s_youtube_oe_v0_1_qa_processed.jsonl
+      - datasets/jsonl/lmms-lab/LLaVA-Video-178K/llava_hound/sharegptvideo_qa_255k_processed.jsonl

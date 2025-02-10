@@ -1,0 +1,457 @@
+[
+  {
+    "name": "chatglm2",
+    "format_user": {
+      "slots": [
+        "[Round {{idx}}]\n\n问：{{content}}\n\n答："
+      ]
+    },
+    "format_prefix": {
+      "slots": [
+        {"token": "[gMASK]"},
+        {"token": "sop"}
+      ]
+    },
+    "format_separator": {
+      "slots": [
+        "\n\n"
+      ]
+    },
+    "efficient_eos": true,
+    "force_system": true
+  },
+  {
+    "name": "chatglm3",
+    "format_user": {
+      "slots": [
+        {"token": "<|user|>"},
+        "\n",
+        "{{content}}",
+        {"token": "<|assistant|>"}
+      ]
+    },
+    "format_assistant": {
+      "slots": [
+        "\n",
+        "{{content}}"
+      ]
+    },
+    "format_system": {
+      "slots": [
+        {"token": "<|system|>"},
+        "\n",
+        "{{content}}"
+      ]
+    },
+    "format_observation": {
+      "slots": [
+        {"token": "<|observation|>"},
+        "\n",
+        "{{content}}",
+        {"token": "<|assistant|>"}
+      ]
+    },
+    "format_tools": {
+      "tool_format": "glm4"
+    },
+    "format_prefix": {
+      "slots": [
+        {"token": "[gMASK]"},
+        {"token": "sop"}
+      ]
+    },
+    "stop_words": [
+      "<|user|>",
+      "<|observation|>"
+    ],
+    "efficient_eos": true
+  },
+  {
+    "name": "chatglm3_system",
+    "format_user": {
+      "slots": [
+        {"token": "<|user|>"},
+        "\n",
+        "{{content}}",
+        {"token": "<|assistant|>"}
+      ]
+    },
+    "format_assistant": {
+      "slots": [
+        "\n",
+        "{{content}}"
+      ]
+    },
+    "format_system": {
+      "slots": [
+        {"token": "[gMASK]"},
+        {"token": "sop"},
+        {"token": "<|system|>"},
+        "\n",
+        "{{content}}"
+      ]
+    },
+    "format_function": {
+      "slots": [
+        "{{name}}\n{{arguments}}"
+      ]
+    },
+    "format_observation": {
+      "slots": [
+        {"token": "<|observation|>"},
+        "\n",
+        "{{content}}",
+        {"token": "<|assistant|>"}
+      ]
+    },
+    "default_system": "You are ChatGLM3, a large language model trained by Zhipu.AI. Follow the user's instructions carefully. Respond using markdown.",
+    "stop_words": [
+      "<|user|>",
+      "<|observation|>"
+    ],
+    "efficient_eos": true
+  },
+  {
+    "name": "glm4",
+    "format_user": {
+      "slots": [
+        "<|user|>\n{{content}}<|assistant|>"
+      ]
+    },
+    "format_assistant": {
+      "slots": [
+        "\n{{content}}"
+      ]
+    },
+    "format_system": {
+      "slots": [
+        "<|system|>\n{{content}}"
+      ]
+    },
+    "format_function": {
+      "slots": [
+        "{{name}}\n{{arguments}}"
+      ],
+      "tool_format": "glm4"
+    },
+    "format_observation": {
+      "slots": [
+        "<|observation|>\n{{content}}<|assistant|>"
+      ]
+    },
+    "format_tools": {
+      "tool_format": "glm4"
+    },
+    "format_prefix": {
+      "slots": [
+        "[gMASK]<sop>"
+      ]
+    },
+    "stop_words": [
+      "<|user|>",
+      "<|observation|>"
+    ],
+    "efficient_eos": true
+  },
+  {
+    "name": "chatml",
+    "format_user": {
+      "slots": [
+        "<|im_start|>user\n{{content}}<|im_end|>\n<|im_start|>assistant\n"
+      ]
+    },
+    "format_system": {
+      "slots": [
+        "<|im_start|>system\n{{content}}<|im_end|>\n"
+      ]
+    },
+    "format_observation": {
+      "slots": [
+        "<|im_start|>tool\n{{content}}<|im_end|>\n<|im_start|>assistant\n"
+      ]
+    },
+    "format_separator": {
+      "slots": [
+        "\n"
+      ]
+    },
+    "stop_words": [
+      "<|im_end|>",
+      "<|im_start|>"
+    ],
+    "replace_eos": true
+  },
+  {
+    "name": "chatml_de",
+    "format_user": {
+      "slots": [
+        "<|im_start|>user\n{{content}}<|im_end|>\n<|im_start|>assistant\n"
+      ]
+    },
+    "format_system": {
+      "slots": [
+        "<|im_start|>system\n{{content}}<|im_end|>\n"
+      ]
+    },
+    "format_observation": {
+      "slots": [
+        "<|im_start|>tool\n{{content}}<|im_end|>\n<|im_start|>assistant\n"
+      ]
+    },
+    "format_separator": {
+      "slots": [
+        "\n"
+      ]
+    },
+    "default_system": "Du bist ein freundlicher und hilfsbereiter KI-Assistent.",
+    "stop_words": [
+      "<|im_end|>",
+      "<|im_start|>"
+    ],
+    "replace_eos": true
+  },
+  {
+    "name": "cpm",
+    "format_user": {
+      "slots": [
+        "<用户>{{content}}<AI>"
+      ]
+    },
+    "format_prefix": {
+      "slots": [
+        ["bos_token"]
+      ]
+    }
+  },
+  {
+    "name": "default",
+    "format_user": {
+      "slots": [
+        "Human: {{content}}\nAssistant:"
+      ]
+    },
+    "format_system": {
+      "slots": [
+        "{{content}}\n"
+      ]
+    },
+    "format_separator": {
+      "slots": [
+        "\n"
+      ]
+    }
+  },
+  {
+    "name": "empty",
+    "format_user": {
+      "slots": [
+        "{{content}}"
+      ]
+    },
+    "format_assistant": {
+      "slots": [
+        "{{content}}"
+      ]
+    }
+  },
+  {
+    "name": "qwen",
+    "format_user": {
+      "slots": [
+        "<|im_start|>user\n{{content}}<|im_end|>\n<|im_start|>assistant\n"
+      ]
+    },
+    "format_system": {
+      "slots": [
+        "<|im_start|>system\n{{content}}<|im_end|>\n"
+      ]
+    },
+    "format_observation": {
+      "slots": [
+        "<|im_start|>tool\n{{content}}<|im_end|>\n<|im_start|>assistant\n"
+      ]
+    },
+    "format_separator": {
+      "slots": [
+        "\n"
+      ]
+    },
+    "default_system": "You are a helpful assistant.",
+    "stop_words": [
+      "<|im_end|>"
+    ],
+    "replace_eos": true
+  },
+  {
+    "name": "long_vita",
+    "format_user": {
+      "slots": [
+        "<|im_start|>user\n{{content}}<|im_end|>\n<|im_start|>assistant\n"
+      ]
+    },
+    "format_observation": {
+      "slots": [
+        "<|im_start|>tool\n{{content}}<|im_end|>\n<|im_start|>assistant\n"
+      ]
+    },
+    "format_separator": {
+      "slots": [
+        "\n"
+      ]
+    },
+    "stop_words": [
+      "<|im_end|>"
+    ],
+    "replace_eos": true
+  },
+  {
+    "name": "llama3",
+    "format_user": {
+      "slots": [
+        "<|start_header_id|>user<|end_header_id|>\n\n{{content}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+      ]
+    },
+    "format_system": {
+      "slots": [
+        "<|start_header_id|>system<|end_header_id|>\n\n{{content}}<|eot_id|>"
+      ]
+    },
+    "format_observation": {
+      "slots": [
+        "<|start_header_id|>tool<|end_header_id|>\n\n{{content}}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+      ]
+    },
+    "format_prefix": {
+      "slots": [
+        ["bos_token"]
+      ]
+    },
+    "stop_words": [
+      "<|eot_id|>"
+    ],
+    "replace_eos": true
+  },
+  {
+    "name": "mistral",
+    "format_user": {
+      "slots": [
+        "[INST] {{content}} [/INST]"
+      ]
+    },
+    "format_prefix": {
+      "slots": [
+        ["bos_token"]
+      ]
+    }
+  },
+  {
+    "name": "mixtral",
+    "format_user": {
+      "slots": [
+        "[INST] {{content}} [/INST]"
+      ]
+    },
+    "format_prefix": {
+      "slots": [
+        ["bos_token"]
+      ]
+    }
+  },
+  {
+    "name": "gemma",
+    "format_user": {
+      "slots": [
+        "<start_of_turn>user\n{{content}}<end_of_turn>\n<start_of_turn>model\n"
+      ]
+    },
+    "format_observation": {
+      "slots": [
+        "<start_of_turn>tool\n{{content}}<end_of_turn>\n<start_of_turn>model\n"
+      ]
+    },
+    "format_separator": {
+      "slots": [
+        "<end_of_turn>\n"
+      ]
+    },
+    "format_prefix": {
+      "slots": [
+        ["bos_token"]
+      ]
+    },
+    "efficient_eos": true
+  },
+  {
+    "name": "llama2",
+    "format_user": {
+      "slots": [
+        ["bos_token"],
+        "[INST] {{content}} [/INST]"
+      ]
+    },
+    "format_system": {
+      "slots": [
+        "<<SYS>>\n{{content}}\n<</SYS>>\n\n"
+      ]
+    }
+  },
+  {
+    "name": "alpaca",
+    "format_user": {
+      "slots": [
+        "### Instruction:\n{{content}}\n\n### Response:\n"
+      ]
+    },
+    "format_separator": {
+      "slots": [
+        "\n\n"
+      ]
+    },
+    "default_system": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n"
+  },
+  {
+    "name": "deepseek2",
+    "format_user": {
+      "slots": [
+        "User: {{content}}\n\nAssistant:"
+      ]
+    },
+    "format_system": {
+      "slots": [
+        "{{content}}\n\n"
+      ]
+    },
+    "format_prefix": {
+      "slots": [
+        ["bos_token"]
+      ]
+    }
+  },
+  {
+    "name": "deepseek2-lite",
+    "format_user": {
+      "slots": [
+        "User: {{content}}\n\nAssistant:"
+      ]
+    },
+    "format_system": {
+      "slots": [
+        "{{content}}\n\n"
+      ]
+    },
+    "format_prefix": {
+      "slots": [
+        ["bos_token"]
+      ]
+    }
+  },
+  {
+    "name": "baichuan2",
+    "format_user": {
+      "slots": [
+        "<reserved_106>{{content}}<reserved_107>"
+      ]
+    },
+    "efficient_eos": true
+  }
+]
