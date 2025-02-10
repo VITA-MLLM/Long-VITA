@@ -142,7 +142,7 @@ def draw_data(all_datasets, output_path, tokenizer=None, image_processor=None):
 
                     row += 1
 
-                for _ in range(content.count("<image>")):
+                for _ in range(content.count("<image>") + content.count("<|image|>")):
                     if images is None:
                         continue
                     img_path = images[image_count]
@@ -162,7 +162,7 @@ def draw_data(all_datasets, output_path, tokenizer=None, image_processor=None):
                     row += 1
                     image_count += 1
 
-                for _ in range(content.count("<video>")):
+                for _ in range(content.count("<video>") + content.count("<|video|>")):
                     if videos is None:
                         continue
                     vid_path = videos[video_count]

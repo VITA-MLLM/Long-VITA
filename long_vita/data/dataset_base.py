@@ -96,8 +96,8 @@ class BaseDataset(torch.utils.data.Dataset):
             max_patch_grid=max_patch_grid,
         )
 
-        with main_process_first(local=True, desc="Loading data"):
-            self.load_data()
+        # with main_process_first(local=True, desc="Loading data"):
+        self.load_data()
 
         self.processed_samples = 0
         self.unjoint_samples = 0
@@ -320,6 +320,7 @@ def main_process_first(local=True, desc="work"):
         else:
             rank = torch.distributed.get_rank()
         is_main_process = rank == 0
+        logger.info(f"rank {rank} is_main_process {is_main_process}")
 
         try:
             if not is_main_process:

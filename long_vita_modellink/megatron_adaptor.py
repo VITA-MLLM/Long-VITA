@@ -96,6 +96,9 @@ def megatron_adaptation(aspm):
     from long_vita_modellink.training.checkpointing import ensure_directory_exists
     aspm.register_patch('megatron.training.checkpointing.ensure_directory_exists', ensure_directory_exists)
 
+    from long_vita_modellink.training.checkpointing import save_checkpoint_wrapper
+    aspm.register_patch('megatron.training.checkpointing.save_checkpoint', save_checkpoint_wrapper)
+
 def optimizer_adaptation(aspm):
     # from long_vita_modellink.core.optimizer.__init__ import _get_param_groups
     # aspm.register_patch('megatron.core.optimizer.__init__._get_param_groups', _get_param_groups)

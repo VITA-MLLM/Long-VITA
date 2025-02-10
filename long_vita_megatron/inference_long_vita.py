@@ -81,7 +81,7 @@ def inference_multi_image():
     # prompt = "<image>" * len(image_path_list) + "\nProvide a full summary of the comic book."
     # prompt = "<image>" * len(image_path_list) + "\nHow many Avengers in the story? Provide their names."
     # prompt = "<image>" * len(image_path_list) + "\nThe inhumans donot join the noble battle, is that right?"
-    prompt = "<image>" * len(image_path_list) + "\nWho is join the noble battle."
+    prompt = "<image>" * len(image_path_list) + "\nWho is join the noble battle?"
 
     print("#" * 100)
 
@@ -136,7 +136,7 @@ def inference_video():
     # prompt = "<image>" * len(image_path_list) + "\nProvide a full summary of the comic book."
     # prompt = "<image>" * len(image_path_list) + "\nHow many Avengers in the story? Provide their names."
     # prompt = "<image>" * len(image_path_list) + "\nThe inhumans donot join the noble battle, is that right?"
-    prompt = "<video>" * len(image_path_list) + "\nWho is join the noble battle."
+    prompt = "<video>" * len(image_path_list) + "\nWho is join the noble battle?"
 
     print("#" * 100)
 
