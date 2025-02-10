@@ -30,7 +30,7 @@ pip install -e .
 
 ## Training
 ### Stage-1 (Vision-Language Alignment)
-This stage requires at least 8 GPUs, each of which has at least 96G Memory.  (We only test on GPUs with 96G memory, and 80G GPUs may also work.)
+This stage requires at least 8 GPUs, each with at least 96G memory.  (We only test on GPUs with 96G memory, and 80G GPUs may also work.)
 
 ```
 bash scripts/megatron/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1_stage1.sh 32768 32768 `date +'%Y%m%d_%H'`0000
@@ -44,7 +44,7 @@ The above script may need some adjustment.
 - Modify other variables to suit the environment.
 
 ### Stage-2 (Long-VITA-16K)
-This stage requires at least 8 GPUs, each of which has at least 96G Memory. (We only test on GPUs with 96G memory, and 80G GPUs may also work.)
+This stage requires at least 8 GPUs, each with at least 96G memory. (We only test on GPUs with 96G memory, and 80G GPUs may also work.)
 
 ```
 bash scripts/megatron/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1_stage2.sh 16384 16384 `date +'%Y%m%d_%H'`0000
@@ -59,7 +59,7 @@ The above script may need some adjustment.
 
 
 ### Stage-3 (Long-VITA-128K)
-This stage requires at least 16 GPUs, each of which has at least 96G Memory.  (We only test on GPUs with 96G memory, and 80G GPUs may also work.)
+This stage requires at least 16 GPUs, each with at least 96G memory.  (We only test on GPUs with 96G memory, and 80G GPUs may also work.)
 
 ```
 bash scripts/megatron/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1cp2_stage3.sh 131072 131072 `date +'%Y%m%d_%H'`0000
@@ -74,7 +74,7 @@ The above script may need some adjustment.
 
 
 ### Stage-4 (Long-VITA-1M)
-This stage requires at least 64 GPUs, each of which has at least 96G Memory.  (We only test on GPU with 96G memory, and 80G GPU may also work.)
+This stage requires at least 64 GPUs, each with at least 96G memory.  (We only test on GPU with 96G memory, and 80G GPU may also work.)
 
 ```
 bash scripts/megatron/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1cp8_stage4.sh 1048576 1048576 `date +'%Y%m%d_%H'`0000
