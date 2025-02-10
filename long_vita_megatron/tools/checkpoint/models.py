@@ -23,7 +23,7 @@ from megatron.core import tensor_parallel
 from modellink.training import model_provider_func_wrapper
 from modellink.checkpointing import load_checkpoint_wrapper
 
-from pretrain_lcvlm import model_provider, extra_args_provider
+from pretrain_long_vita import model_provider, extra_args_provider
 from megatron.training.arguments import parse_args
 
 logger.basicConfig(format="")

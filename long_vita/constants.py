@@ -29,7 +29,6 @@ if True:
 
 logger.info(f"IMG_TAG_TOKEN {IMG_TAG_TOKEN}")
 logger.info(f"VID_TAG_TOKEN {VID_TAG_TOKEN}")
-logger.info(f"AUD_TAG_TOKEN {AUD_TAG_TOKEN}")
 logger.info(f"IMG_CONTEXT_TOKEN {IMG_CONTEXT_TOKEN}")
 logger.info(f"IMG_START_TOKEN {IMG_START_TOKEN}")
 logger.info(f"IMG_END_TOKEN {IMG_END_TOKEN}")
@@ -39,8 +38,6 @@ logger.info(f"VID_END_TOKEN {VID_END_TOKEN}")
 logger.info(f"PATCH_CONTEXT_TOKEN {PATCH_CONTEXT_TOKEN}")
 logger.info(f"PATCH_START_TOKEN {PATCH_START_TOKEN}")
 logger.info(f"PATCH_END_TOKEN {PATCH_END_TOKEN}")
-logger.info(f"AUD_START_TOKEN {AUD_START_TOKEN}")
-logger.info(f"AUD_END_TOKEN {AUD_END_TOKEN}")
 
 # IMAGENET_MEAN = (0.485, 0.456, 0.406)
 # IMAGENET_STD = (0.229, 0.224, 0.225)

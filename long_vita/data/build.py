@@ -9,7 +9,6 @@ import transformers
 from datasets import concatenate_datasets, load_dataset
 
 from .data_collator import DataCollatorForSupervisedDataset, collate_fn_deepspeed
-from .dataset_intern import InternDataset
 from .dataset_llama2 import Llama2Dataset
 from .dataset_llama3 import Llama3Dataset
 from .dataset_mistral import MistralDataset

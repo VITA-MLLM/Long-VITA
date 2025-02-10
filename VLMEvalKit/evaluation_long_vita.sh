@@ -38,6 +38,7 @@ echo Logging output to "$LOG"
 ######################################################################
 VLMEvalKit_DIR=${LOCAL_CODE_PATH}/third_party/VLMEvalKit/
 pip3 install --no-deps -e ${VLMEvalKit_DIR}
+pip3 install moviepy==1.0.3
 
 ######################################################################
 export ASCEND_RT_VISIBLE_DEVICES=0

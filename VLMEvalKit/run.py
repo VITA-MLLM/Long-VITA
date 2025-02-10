@@ -9,9 +9,9 @@ from vlmeval.inference_mt import infer_data_job_mt
 from vlmeval.smp import *
 from vlmeval.utils.result_transfer import MMMU_result_transfer, MMTBench_result_transfer
 
-from lcvlm import LongVITAAPI
+from long_vita import LongVITAAPI
 from functools import partial
-supported_VLM["LongVITA"] = partial(LongVITAAPI, model='lcvlm', temperature=0, retry=10)
+supported_VLM["LongVITA"] = partial(LongVITAAPI, model='long_vita', temperature=0, retry=10)
 
 def build_model_from_config(cfg):
     import vlmeval.api

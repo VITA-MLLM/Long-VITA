@@ -158,7 +158,7 @@ def _load_checkpoint(queue, args):
 
     # Determine how to make our models
     if args.model_type == 'GPT':
-        from long_vita_modellink.pretrain_lcvlm import model_provider
+        from long_vita_modellink.pretrain_long_vita import model_provider
         margs.model_type = ModelType.encoder_or_decoder
     else:
         raise Exception(f'unrecognized model type: {args.model_type}')

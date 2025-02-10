@@ -23,7 +23,7 @@ from long_vita_megatron.tasks.inference.infer_base import add_text_generate_args
 from long_vita_megatron.tasks.inference.module import GPTVLModelInfer, MegatronModuleForCausalLM
 # from long_vita_megatron.tasks.inference.text_generation.module import GPTVLModelInfer, MegatronModuleForCausalLM
 
-from long_vita_megatron.pretrain_lcvlm import vision_model_provider
+from long_vita_megatron.pretrain_long_vita import vision_model_provider
 # from long_vita_megatron.legacy.model.gpt_vl_model import GPTVLModel
 
 def model_provider(pre_process=True, post_process=True) -> Union[GPTVLModelInfer, GPTModel]:
@@ -103,7 +103,7 @@ def extra_args_provider(parser):
     group.add_argument("--port", type=int, default=5000,
                        help='port for text generation server to run on')
 
-    from long_vita_megatron.pretrain_lcvlm import extra_args_provider
+    from long_vita_megatron.pretrain_long_vita import extra_args_provider
     parser = extra_args_provider(parser)
 
     parser = add_text_generate_args(parser)

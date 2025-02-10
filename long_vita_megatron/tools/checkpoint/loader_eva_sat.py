@@ -158,7 +158,7 @@ def load_checkpoint_to_model(args):
     '''Set model params.'''
 
     from pretrain_gpt import model_provider
-    # from long_vita_modellink.pretrain_lcvlm import model_provider
+    # from long_vita_modellink.pretrain_long_vita import model_provider
 
     # Load Huggingface model.
     from sat import AutoModel
