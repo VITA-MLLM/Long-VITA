@@ -9,6 +9,8 @@
 
 
 ## 🔥 News
+
+* **`2025.02.10`** 🌟 We add more [experiments](#-training-inference-and-evaluation) on logits-masked LM head. During inference, logits-masked LM head extends the max sequence length by $415$% and reduces time cost by $45$%.
 * **`2025.02.09`** 🌟 We support training and inference on both Ascend NPU with MindSpeed and Nvidia GPU with Megatron.
 * **`2025.02.05`** 🌟 The training code, deployment code, and model weights **have been released**. ~~We currently only support Ascend NPU and are working on adapting to Nvidia GPU~~.
 * **`2024.02.05`** 🌟 We are proud to launch Long-VITA, a strong long-context visual language model supporting over one million tokens.
@@ -43,8 +45,9 @@
 ![image](https://github.com/user-attachments/assets/87bd2f4d-baf5-4a63-8002-151e30f52147)
 
 
+- **Effectiveness of Logits-Masked LM Head**.
 
-
+![image](https://github.com/user-attachments/assets/7a06b4dd-267c-470f-80f2-d26c87e23460)
 
 
 
