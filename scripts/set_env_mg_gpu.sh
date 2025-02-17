@@ -43,28 +43,3 @@ pip3 install --no-index --find-links=/data/software/ -r requirements.txt
 export NVTE_FLASH_ATTN=1
 export NVTE_FUSED_ATTN=0 
 
-#return 0
-
-
-######################################################################
-#export ROOT_PATH=/data/
-#export ROOT_PATH_2=/data_2/
-#export ROOT_PATH_4=/data_4/
-#export CODE_PATH=${ROOT_PATH_2}/Long-VITA/
-
-#export LOCAL_ROOT_PATH=/data_local/
-#export LOCAL_CODE_PATH=${LOCAL_ROOT_PATH}/Long-VITA/
-
-######################################################################
-#cd ${LOCAL_CODE_PATH}
-#rm -fr datasets
-#mkdir -p datasets
-#ln -s ${ROOT_PATH}/data/ datasets/CV
-#ln -s ${ROOT_PATH}/data/LLM datasets/LLM
-#ln -s ${ROOT_PATH}/data/LMM datasets/LMM
-
-
-#ln -s ${ROOT_PATH_2}/data/LMM/LUMData datasets/LMM/LUMData
-
-#ln -s ${ROOT_PATH_3}/data/LMM/Share14/ datasets/LMM/Share14/
-#ln -s ${ROOT_PATH_3}/data/LMM/OpenDataLab___MovieNet/ datasets/LMM/OpenDataLab___MovieNet/

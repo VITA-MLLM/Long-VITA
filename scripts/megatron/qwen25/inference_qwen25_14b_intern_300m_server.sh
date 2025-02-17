@@ -6,7 +6,7 @@ set -x
 SEQ_LENGTH="$1"
 if [ -z "$SEQ_LENGTH" ]
 then
-    SEQ_LENGTH=1048576
+    SEQ_LENGTH=2097152
 fi
 
 DATA_SEQ_LENGTH="$2"
@@ -52,9 +52,9 @@ echo Logging output to "$LOG"
 ######################################################################
 
 TOKENIZER_PATH=${ROOT_PATH}/models/Qwen/Qwen2.5-14B-Instruct/
-#CKPT_LOAD_DIR=${ROOT_PATH}/output/LM/scripts/modellink/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1_stage2.sh/20241014_131952_te/
-#CKPT_LOAD_DIR=${ROOT_PATH}/output/LM/scripts/modellink/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1cp2_stage3.sh/20241127_204213_te/
-CKPT_LOAD_DIR=${ROOT_PATH}/output/LM/scripts/modellink/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1cp8_stage4.sh/20241128_234743_te/
+#CKPT_LOAD_DIR=${ROOT_PATH}/output/LM/scripts/modellink/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1_stage2.sh/20241014_131952_mg/
+#CKPT_LOAD_DIR=${ROOT_PATH}/output/LM/scripts/modellink/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1cp2_stage3.sh/20241127_204213_mg/
+CKPT_LOAD_DIR=${ROOT_PATH}/output/LM/scripts/modellink/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1cp8_stage4.sh/20241128_234743_mg/
 #CKPT_LOAD_DIR=${ROOT_PATH}/output/LM/scripts/megatron/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1cp8_stage4.sh/20250131_160000/
 
 

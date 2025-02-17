@@ -6,7 +6,7 @@ set -x
 SEQ_LENGTH="$1"
 if [ -z "$SEQ_LENGTH" ]
 then
-    SEQ_LENGTH=1048576
+    SEQ_LENGTH=2097152
 fi
 
 DATA_SEQ_LENGTH="$2"
@@ -52,7 +52,7 @@ echo Logging output to "$LOG"
 ######################################################################
 
 TOKENIZER_PATH=${ROOT_PATH}/models/Qwen/Qwen2.5-14B-Instruct/
-CKPT_LOAD_DIR=${ROOT_PATH}/output/LM/scripts/modellink/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1cp8_stage4.sh/20241128_234743/
+CKPT_LOAD_DIR=${ROOT_PATH}/output/LM/scripts/modellink/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1cp8_stage4.sh/20241128_234743_mg/
 
 
 VIT_CKPT_LOAD_DIR="/"

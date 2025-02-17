@@ -65,3 +65,4 @@ export CUDA_DEVICE_MAX_CONNECTIONS=1
 
 
 pip3 install -r requirements_npu.txt
+

@@ -10,7 +10,7 @@ einops
 pybind11
 tensorboardX
 pyarrow
-transformers>=4.46.3
+transformers>=4.48.3
 deepspeed
 accelerate>=1.1.1
 timm

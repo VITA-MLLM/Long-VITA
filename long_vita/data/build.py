@@ -58,7 +58,9 @@ def build_supervised_dataset_deepspeed(
     cross_dataset_joint = data_args.cross_dataset_joint
     dataset_joint = data_args.dataset_joint
 
-    if "qwen2" in getattr(model_config, "model_type", None):
+    if "long_vita" in getattr(model_config, "model_type", None):
+        TrainDataset = Qwen2Dataset
+    elif "qwen2" in getattr(model_config, "model_type", None):
         TrainDataset = Qwen2Dataset
     elif "qwen" in getattr(model_config, "model_type", None):
         raise NotImplementedError
@@ -97,9 +99,6 @@ def build_supervised_dataset_deepspeed(
         seed=seed,
         cross_dataset_joint=cross_dataset_joint,
         dataset_joint=dataset_joint,
-        audio_tokenizer_type=audio_tokenizer_type,
-        audio_tokenizer_path=audio_tokenizer_path,
-        # audio_tokenizer=audio_tokenizer,
     )
     eval_dataset = None
 
