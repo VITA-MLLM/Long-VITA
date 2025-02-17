@@ -10,8 +10,10 @@ from vlmeval.smp import *
 from vlmeval.utils.result_transfer import MMMU_result_transfer, MMTBench_result_transfer
 
 from long_vita import LongVITAAPI
+from long_vita_hf import LongVITA_HF
 from functools import partial
 supported_VLM["LongVITA"] = partial(LongVITAAPI, model='long_vita', temperature=0, retry=10)
+supported_VLM["LongVITA_HF"] = partial(LongVITA_HF, model_path='long_vita_hf', temperature=0,)
 
 def build_model_from_config(cfg):
     import vlmeval.api

@@ -39,6 +39,7 @@ echo Logging output to "$LOG"
 VLMEvalKit_DIR=${LOCAL_CODE_PATH}/third_party/VLMEvalKit/
 pip3 install --no-deps -e ${VLMEvalKit_DIR}
 pip3 install moviepy==1.0.3
+pip3 install ipdb
 
 ######################################################################
 export ASCEND_RT_VISIBLE_DEVICES=0
@@ -51,7 +52,7 @@ mkdir -p ${LMUData}
 cd VLMEvalKit
 
 ######################################################################
-HF_TOKEN=""
+export HF_TOKEN="xxxx"
 
 #huggingface-cli download --repo-type dataset --token ${HF_TOKEN} --resume-download lmms-lab/Video-MME
 #huggingface-cli download --repo-type dataset --token ${HF_TOKEN} --resume-download OpenGVLab/MVBench
@@ -88,7 +89,7 @@ then
 		export MAX_NUM_FRAME=${NFRAME}
 
 		#python3 run.py --data Video-MME --model ${MODEL} --verbose --work-dir ${OUTPUT_DIR} --nframe ${NFRAME} --use-subtitle
-		python3 run.py --data Video-MME --model ${MODEL} --verbose --work-dir ${OUTPUT_DIR} --nframe ${NFRAME}
+		#python3 run.py --data Video-MME --model ${MODEL} --verbose --work-dir ${OUTPUT_DIR} --nframe ${NFRAME}
 
 		python3 run.py --data MVBench --model ${MODEL} --verbose --work-dir ${OUTPUT_DIR} --nframe ${NFRAME}
 
@@ -102,7 +103,7 @@ then
 
 	done
 
-	exit 0
+	#exit 0
 fi
 
 
