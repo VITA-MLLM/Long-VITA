@@ -20,7 +20,7 @@ pip install -e .
   ```
   bash scripts/modellink/qwen25/ckpt_convert_qwen25.sh
   ```
-## VIT
+### VIT
 - Downloading VIT from https://huggingface.co/OpenGVLab/InternViT-300M-448px.
 
 - Convert Huggingface weight to Megatron
