@@ -57,7 +57,13 @@ Not Implemented Yet
 
 ## Inference
 
-Here we implement a simple script
+We provide the converted Huggingface weights from MindSpeed weights in
+
+- https://huggingface.co/VITA-MLLM/Long-VITA-16K_HF
+- https://huggingface.co/VITA-MLLM/Long-VITA-128K_HF
+- https://huggingface.co/VITA-MLLM/Long-VITA-1M_HF
+
+Here we implement a simple script for inference
 ```
 python tools/inference_long_vita.py VITA-MLLM/Long-VITA-16K_HF
 python tools/inference_long_vita.py VITA-MLLM/Long-VITA-128K_HF
