@@ -25,6 +25,7 @@
 
 - [Highlights](#-highlights)
 - [Experimental Results](#-experimental-results)
+- [Models](#-models)
 - [Training, Inference and Evaluation](#-training-inference-and-evaluation)
 
 
@@ -52,6 +53,22 @@
 - **Effectiveness of Logits-Masked LM Head**.
 
 ![image](https://github.com/user-attachments/assets/7a06b4dd-267c-470f-80f2-d26c87e23460)
+
+
+
+## Models
+
+ Model          | LLM Size | Training Context | Training Frames | MindSpeed Weights                               | Megatron Weights                                   | Huggingface Weights                                
+---------------:|---------:|-----------------:|----------------:|------------------------------------------------:|---------------------------------------------------:|---------------------------------------------------:
+ Long-VITA-16K  | 14B      | 16,384           | 64              | https://huggingface.co/VITA-MLLM/Long-VITA-16K  | https://huggingface.co/VITA-MLLM/Long-VITA-16K_MG  | https://huggingface.co/VITA-MLLM/Long-VITA-16K_HF  
+ Long-VITA-128K | 14B      | 131,072          | 512             | https://huggingface.co/VITA-MLLM/Long-VITA-128K | https://huggingface.co/VITA-MLLM/Long-VITA-128K_MG | https://huggingface.co/VITA-MLLM/Long-VITA-128K_HF 
+ Long-VITA-1M   | 14B      | 1,048,576        | 4,096           | https://huggingface.co/VITA-MLLM/Long-VITA-1M   | https://huggingface.co/VITA-MLLM/Long-VITA-1M_MG   | https://huggingface.co/VITA-MLLM/Long-VITA-1M_HF   
+
+
+
+
+
+
 
 
 
