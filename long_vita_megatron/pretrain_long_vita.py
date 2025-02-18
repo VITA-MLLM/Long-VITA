@@ -447,6 +447,7 @@ class MegatronVisionModel(torch.nn.Module):
 
 
         args.vit_num_layers = vit_args.num_layers
+        args.vit_args = vit_args
 
     def forward_projection(self, vit_output):
         # print("MegatronVisionModel vit_output2", vit_output.size())

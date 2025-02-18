@@ -78,8 +78,6 @@ def inference_multi_image():
                 filepath = os.path.join(root, filename)
                 image_path_list.append(filepath)
 
-    # video_path_list = video_path_list * 1000
-    # video_path_list = video_path_list[:100]
     image_path_list = natsort.natsorted(image_path_list)
 
     # prompt = "<image>" * len(image_path_list) + "\nProvide a full summary of the comic book."

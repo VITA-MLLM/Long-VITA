@@ -337,6 +337,13 @@ class GPTVLModel(LanguageModule):
         if self.share_embeddings_and_output_weights:
             output_weight = self.shared_embedding_or_output_weight()
         logits, _ = self.output_layer(hidden_states, weight=output_weight, logit_mask=logit_mask)
+
+        # hidden_states = torch.split(hidden_states, 32768, dim=0)
+        # chunk_num = len(hidden_states) 
+        # for chunk_idx in range(chunk_num):
+        #     torch.cuda.empty_cache()
+        #     logits, _ = self.output_layer(hidden_states[chunk_idx], weight=output_weight, logit_mask=logit_mask)
+
         # print(f"torch.distributed.get_rank() {torch.distributed.get_rank()} logits {logits.size()}")
         # new add to scale logits
         if args.output_multiplier_scale:

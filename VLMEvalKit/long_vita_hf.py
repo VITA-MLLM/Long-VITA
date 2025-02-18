@@ -818,7 +818,7 @@ class LongVITAWrapper(BaseModel):
 
         model_path = "/data/output/LM/scripts/modellink/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1_stage2.sh/20241014_131952_hf/"
         model_path = "/data/output/LM/scripts/modellink/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1cp2_stage3.sh/20241127_204213_hf/"
-        model_path="/data/output/LM/scripts/modellink/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1cp8_stage4.sh/20241128_234743_hf/"
+        model_path = "/data/output/LM/scripts/modellink/qwen25/finetune_qwen25_14b_intern_300m_ptd_tp8pp1cp8_stage4.sh/20241128_234743_hf/"
 
         # device_map = "auto"
         # device_map = "npu:0"

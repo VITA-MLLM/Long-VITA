@@ -25,10 +25,11 @@
 
 export DISTRIBUTED_BACKEND="nccl"
 #export CUDA_DEVICE_MAX_CONNECTIONS=1
-#pip3 install -r requirements.txt
-pip3 install --no-index --find-links=/data/software/ -r requirements.txt
+pip3 install -r requirements.txt
+#pip3 install --no-index --find-links=/data/software/ -r requirements.txt
 
-pip3 install --no-index --find-links=/data/software/ deepspeed==0.15.4
+pip3 install deepspeed==0.15.4
+#pip3 install --no-index --find-links=/data/software/ deepspeed==0.15.4
 #pip3 install deepspeed==0.16.1
 #pip3 install deepspeed==0.14.2
 
