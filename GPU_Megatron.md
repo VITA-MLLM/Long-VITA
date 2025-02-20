@@ -115,7 +115,7 @@ export LCVLM_URL=http://127.0.0.1:5001/api
 
 Infer
 ```
-python long_vita_modellink/inference_long_vita.py
+python long_vita_megatron/inference_long_vita.py
 ```
 
 ## Evaluation
