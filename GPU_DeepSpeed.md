@@ -50,10 +50,12 @@ The above script may need some adjustment.
 ### Stage-3 (Long-VITA-128K)
 Not Implemented Yet
 
+For long-context training, we only support [MindSpeed](https://github.com/VITA-MLLM/Long-VITA/blob/main/NPU_MindSpeed.md) and [Megatron](https://github.com/VITA-MLLM/Long-VITA/blob/main/GPU_Megatron.md) frameworks now.
 
 ### Stage-4 (Long-VITA-1M)
 Not Implemented Yet
 
+For long-context training, we only support [MindSpeed](https://github.com/VITA-MLLM/Long-VITA/blob/main/NPU_MindSpeed.md) and [Megatron](https://github.com/VITA-MLLM/Long-VITA/blob/main/GPU_Megatron.md) frameworks now.
 
 ## Inference
 
