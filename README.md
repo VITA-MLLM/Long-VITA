@@ -11,12 +11,11 @@
 
 
 
-## 🔥 News
+## :fire: News
 
-* **`2025.02.17`** 🌟 We support training and inference on **Nvidia GPU with DeepSpeed** and **Huggingface Transformer**.
-* **`2025.02.11`** 🌟 We add more [experiments](#-experimental-results) on logits-masked LM head. During inference, logits-masked LM head extends the max sequence length by $415$% and reduces time cost by $45$%.
-* **`2025.02.09`** 🌟 We support training and inference on both **Ascend NPU with MindSpeed** and **Nvidia GPU with Megatron**.
-* **`2025.02.05`** 🌟 The training code, deployment code, and model weights **have been released**. ~~We currently only support Ascend NPU and are working on adapting to Nvidia GPU~~.
+* **`2025.02.17`** 🌟 We support training on **Nvidia GPU with DeepSpeed** and inference on **Nvidia GPU with Transformer**.
+* **`2025.02.09`** 🌟 We support training and inference on **Nvidia GPU with Megatron**.
+* **`2025.02.05`** 🌟 We release training code, deployment code, and model weights, which support **Ascend NPU with MindSpeed**.
 * **`2024.02.05`** 🌟 We are proud to launch Long-VITA, a strong long-context visual language model supporting over one million tokens.
 
 
@@ -52,11 +51,13 @@
 
 - **Effectiveness of Logits-Masked LM Head**.
 
-![image](https://github.com/user-attachments/assets/7a06b4dd-267c-470f-80f2-d26c87e23460)
+![image](https://github.com/user-attachments/assets/94389a9f-3134-4fd6-9531-62f626d38e39)
 
 
 
-## Models
+
+
+## 🐍 Models
 
  Model          | LLM Size | Training Context | Training Frames | MindSpeed Weights                               | Megatron Weights                                   | Huggingface Weights                                
 ---------------:|---------:|-----------------:|----------------:|------------------------------------------------:|---------------------------------------------------:|---------------------------------------------------:
