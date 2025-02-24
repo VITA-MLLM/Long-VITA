@@ -15,7 +15,7 @@
 
 * **`2025.02.17`** 🌟 We support training on **Nvidia GPU with DeepSpeed** and inference on **Nvidia GPU with Transformer**.
 * **`2025.02.09`** 🌟 We support training and inference on **Nvidia GPU with Megatron**.
-* **`2025.02.05`** 🌟 We release training code, deployment code, and model weights, which support **Ascend NPU with MindSpeed**.
+* **`2025.02.05`** 🌟 We release training code, **training log**, deployment code, and model weights, which support **Ascend NPU with MindSpeed**.
 * **`2024.02.05`** 🌟 We are proud to launch Long-VITA, a strong long-context visual language model supporting over one million tokens.
 
 
