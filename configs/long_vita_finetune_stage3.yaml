@@ -305,12 +305,12 @@ dataset:
   Movie:
     ratio: 0.0
     data_paths:
-      - datasets/jsonl/MovieNet/MovieNet.jsonl
+      - datasets/jsonl/VITA-MLLM/MovieNet/summary.jsonl
 
   Comic-9K:
     ratio: 1.0
     data_paths:
-      - datasets/jsonl/Comic-9K/summary.jsonl
+      - datasets/jsonl/VITA-MLLM/Comic-9K/summary.jsonl
 
   lmms-lab/LLaVA-Video-178K_0_30_s_cap:
     ratio: 1.0
