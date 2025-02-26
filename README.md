@@ -6,7 +6,8 @@
 
 <p align="center">
     <a href="https://arxiv.org/abs/2502.05177" target="_blank"><img src="https://img.shields.io/badge/Long%20VITA-Report-b5212f.svg?logo=arxiv" /></a>
-    <a href="https://huggingface.co/VITA-MLLM" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-VITA%20MLLM-ffc107?color=ffc107&logoColor=white" /></a>
+    <a href="https://huggingface.co/VITA-MLLM" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-ffc107?color=ffc107&logoColor=white" /></a>
+    <a href="https://huggingface.co/spaces/shenyunhang/Long-VITA" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-ffc107?color=ffc107&logoColor=white" /></a>
  </p>
 
 
