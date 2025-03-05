@@ -297,6 +297,8 @@ def load_megatron_model(args):
             elif 'linear_fc1' in k:
                 viewed = [x.view(2, -1, args.hidden_size) for x in v]
                 target_v = torch.cat(viewed, dim=1).view(-1, args.hidden_size)
+            elif 'unused' in k:
+                continue
             else:
                 print(k, v)
                 raise ValueError
