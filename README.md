@@ -15,7 +15,7 @@
 ## :fire: News
 
 
-* **`2025.02.27`** 🌟 We have an [Oneline Demo](https://huggingface.co/spaces/shenyunhang/Long-VITA) now.
+* **`2025.02.27`** 🌟 We have an [Online Demo](https://huggingface.co/spaces/shenyunhang/Long-VITA) now.
 * **`2025.02.27`** 🌟 [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) of OpenCompass has supported our Long-VITA.
 * **`2025.02.17`** 🌟 We support training on **Nvidia GPU with DeepSpeed** and inference on **Nvidia GPU with Transformer**.
 * **`2025.02.09`** 🌟 We support training and inference on **Nvidia GPU with Megatron**.
