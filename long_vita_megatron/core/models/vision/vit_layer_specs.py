@@ -18,9 +18,9 @@ from megatron.core.transformer.transformer_layer import TransformerLayer, Transf
 
 
 
-from long_vita_modellink.core.models.vision.eva_vit_model import EVAViTTransformerLayer
-from long_vita_modellink.core.models.vision.intern_vit_model import InternViTTransformerLayer
-from long_vita_modellink.core.models.vision.siglip_vit_model import SigLIPViTTransformerLayer
+from long_vita_megatron.core.models.vision.eva_vit_model import EVAViTTransformerLayer
+from long_vita_megatron.core.models.vision.intern_vit_model import InternViTTransformerLayer
+from long_vita_megatron.core.models.vision.siglip_vit_model import SigLIPViTTransformerLayer
 from megatron.core.transformer.custom_layers.transformer_engine import (
     TEColumnParallelLinear,
     TENorm,
