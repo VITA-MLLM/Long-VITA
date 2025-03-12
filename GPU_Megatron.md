@@ -25,8 +25,9 @@ pip install -e .
 
 - Convert Huggingface weight to Megatron
   ```
-  bash scripts/megatron/convert_model_intern_vit.sh
+  bash scripts/modellink/convert_model_intern_vit.sh
   ```
+  The vision model parts are the same in the Megatron and Modellink training framework.
 
 ## Training
 ### Stage-1 (Vision-Language Alignment)
