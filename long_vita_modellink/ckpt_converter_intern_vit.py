@@ -46,10 +46,12 @@ def convert(download_root, output_path, tensor_parallel_size, use_te):
     new_state_dicts = [{"model": dict()} for _ in range(tensor_parallel_size)]
 
     # Indices from mapping pytorch multihead attention to megatron.
+    # InternViT-6B-448px-V1-5 and InternViT-6B-448px-V2_5
     kv_channels =128
     hidden_dim = 3200
     num_heads = 25
 
+    # InternViT-300M-448px and InternViT-300M-448px-V2_5
     kv_channels = 64
     hidden_dim = 1024
     num_heads = 16
