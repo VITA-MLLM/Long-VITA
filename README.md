@@ -83,11 +83,11 @@ We originally implemented Long-VITA on Ascend NPU and will adapt to Nvidia GPU.
 
 - [Data Preparation for Training](https://github.com/VITA-MLLM/Long-VITA/blob/main/DATA.md)
   
-- [Ascend NPU with MindSpeed](https://github.com/VITA-MLLM/Long-VITA/blob/main/NPU_MindSpeed.md)
+- [MindSpeed](https://github.com/VITA-MLLM/Long-VITA/blob/main/MindSpeed.md)
 
-- [Nvidia GPU with Megatron](https://github.com/VITA-MLLM/Long-VITA/blob/main/GPU_Megatron.md)
+- [Megatron](https://github.com/VITA-MLLM/Long-VITA/blob/main/Megatron.md)
 
-- [Nvidia GPU with DeepSpeed](https://github.com/VITA-MLLM/Long-VITA/blob/main/GPU_DeepSpeed.md)
+- [DeepSpeed](https://github.com/VITA-MLLM/Long-VITA/blob/main/DeepSpeed.md)
 
 
 
