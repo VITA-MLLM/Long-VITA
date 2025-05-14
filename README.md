@@ -79,7 +79,7 @@
 
 ## ⭐ Training, Inference and Evaluation
 
-We originally implemented Long-VITA on Ascend NPU and will adapt to Nvidia GPU.
+We implemented Long-VITA on three frameworks.
 
 - [Data Preparation for Training](https://github.com/VITA-MLLM/Long-VITA/blob/main/DATA.md)
   
